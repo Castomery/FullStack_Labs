@@ -21,7 +21,7 @@ export default function Home() {
     return (
 
         <div className='flex h-screen bg-orange-300'>
-        <form onSubmit={handleFormSubmit} className='flex flex-col w-1/3 m-auto p-4 border-2 border-black'>
+        <form onSubmit={handleFormSubmit} className='flex flex-col m-auto p-4 border-2 border-black'>
           <label className='mb-4 font-bold'>
             Ім'я:
             <input
@@ -29,7 +29,7 @@ export default function Home() {
               name="name"
               value={formData.name}
               onChange={handleInputChange}
-              className='gap-4 p-2 border-2'
+              className=' w-60 flex gap-4 p-2 border-2'
             />
           </label>
   
@@ -39,7 +39,7 @@ export default function Home() {
               name="message"
               value={formData.message}
               onChange={handleInputChange}
-              className='p-2 border-2'
+              className='w-60 flex p-2 border-2'
             />
           </label>
   
