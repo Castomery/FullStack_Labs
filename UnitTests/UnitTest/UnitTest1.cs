@@ -34,5 +34,32 @@ namespace UnitTest
             double c = 5;
             Assert.Throws<Exception>(() => _calculator.SolveQuadraticEquation(a, b, c));
         }
+
+        [Fact]
+        public void SolveSystemOfLinearEquations()
+        {
+            double[,] array = { { 0, 2, 1, 4 }, { 1, 1, 2, 6 }, { 2, 1, 1, 7 } };
+            var result = _calculator.GaussElimination(array);
+            double[] expected = { 2.2, 1.4, 1.2 };
+            Assert.Equivalent(expected, result);
+        }
+
+        [Fact]
+        public void HasInfiniteSolutions()
+        {
+            double[,] array = { { 1,1,1, 3 }, { 2, 4, 1, 8 }, { 6, 10, 4, 22 } };
+            var result = _calculator.CheckForInfinitySolutions(array);
+            var expected = true;
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void HasNoSolutions()
+        {
+            double[,] array = { { 1, 1, -1, 2 }, { 2, 3, -1, 0 }, { 3, 4, -2, 1 } };
+            var result = _calculator.CheckForNoSolutions(array);
+            var expected = true;
+            Assert.Equal(expected, result);
+        }
     }
 }
