@@ -1712,6 +1712,16 @@
         "build": {
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "UnitTests/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/UnitTests.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UnitTests.dll": {}
+        }
       }
     }
   },
@@ -5506,11 +5516,17 @@
         "xunit.runner.visualstudio.2.4.5.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "UnitTests/1.0.0": {
+      "type": "project",
+      "path": "../UnitTests/UnitTests.csproj",
+      "msbuildProject": "../UnitTests/UnitTests.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.NET.Test.Sdk >= 17.5.0",
+      "UnitTests >= 1.0.0",
       "coverlet.collector >= 3.2.0",
       "xunit >= 2.4.2",
       "xunit.runner.visualstudio >= 2.4.5"
@@ -5542,7 +5558,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Інше\\темп\\Project\\Weather\\UnitTests\\UnitTests\\UnitTests.csproj": {
+              "projectPath": "C:\\Інше\\темп\\Project\\Weather\\UnitTests\\UnitTests\\UnitTests.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,11 @@
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\obj\Debug\net6.0\UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\obj\Debug\net6.0\UnitTests.AssemblyInfoInputs.cache
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\obj\Debug\net6.0\UnitTests.AssemblyInfo.cs
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\obj\Debug\net6.0\UnitTests.csproj.CoreCompileInputs.cache
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\bin\Debug\net6.0\UnitTests.deps.json
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\bin\Debug\net6.0\UnitTests.dll
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\bin\Debug\net6.0\UnitTests.pdb
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\obj\Debug\net6.0\UnitTests.dll
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\obj\Debug\net6.0\refint\UnitTests.dll
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\obj\Debug\net6.0\UnitTests.pdb
+C:\Інше\темп\Project\Weather\UnitTests\UnitTests\obj\Debug\net6.0\ref\UnitTests.dll

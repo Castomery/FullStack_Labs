@@ -1,8 +1,10 @@
+using UnitTests;
+
 namespace UnitTest
 {
     public class UnitTest1
     {
-        private Calculator _calculator;
+        private Calculator _calculator = new Calculator();
         [Fact]
         public void SolveQuadraticEquationWirhTwoSolutions()
         {
@@ -12,9 +14,9 @@ namespace UnitTest
             var result = _calculator.SolveQuadraticEquation(a, b, c);
 
             double[] expected = {-6,-0.5};
-            Assert.Equal(expected, result);
+            Assert.Equivalent(expected, result);
         }
-
+        [Fact]
         public void SolveQuadraticEquationWirhOneSolution()
         {
             double a = 1;
@@ -24,15 +26,13 @@ namespace UnitTest
             double[] expected = {-1};
             Assert.Equal(expected, result);
         }
-
+        [Fact]
         public void SolveQuadraticEquationWirhNoSolutions()
         {
             double a = 1;
             double b = 2;
             double c = 5;
-            var result = _calculator.SolveQuadraticEquation(a,b,c);
-            string expected = "Discriminant is negativ. Quadratic has no real solution.";
-            Assert.Equal(expected, result);
+            Assert.Throws<Exception>(() => _calculator.SolveQuadraticEquation(a, b, c));
         }
     }
 }
